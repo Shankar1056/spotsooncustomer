@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_15_to_17"
+    android:paddingLeft="@dimen/padding_15_to_17"
+    android:paddingRight="@dimen/padding_15_to_17"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/layout2">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bullet"/>
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pic"
+            android:paddingLeft="@dimen/padding_10_t0_13">
+
+            <com.utility.CustomTextView
+                android:id="@+id/packageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="product Name"
+                android:textColor="@color/producatsname"
+                android:textSize="@dimen/textsize_14_t0_16"
+                android:singleLine="true"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/packageAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/packageName"
+                android:text="subcatamount"
+                android:textSize="@dimen/textsize_12_to_14"
+                android:textColor="@color/product_name" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/subCatMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/minus_off" />
+
+        <com.utility.CustomTextView
+            android:id="@+id/subCatCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_marginRight="@dimen/margin_10_t0_13"
+            android:contentDescription="nocount"
+            android:text="0"
+            android:textColor="@color/background_gray"/>
+
+        <ImageButton
+            android:id="@+id/subCatAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plus_on"
+            android:contentDescription="plus icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_15_to_18"
+        android:layout_below="@+id/layout2"
+        android:background="@color/gray"/>
+</RelativeLayout>

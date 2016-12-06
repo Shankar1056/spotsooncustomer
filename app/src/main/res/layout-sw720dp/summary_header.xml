@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_20_to_27">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10_t0_13">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/merchant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo"
+            android:textSize="@dimen/textsize_18_t0_20"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10_t0_13_10inch"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <com.utility.CustomTextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name : --"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"
+               />
+            <com.utility.CustomTextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:text="User ID : --"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/margin_5_to_8"
+                />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight=".7"
+    android:gravity="center">
+    <com.utility.CustomTextView
+        android:id="@+id/view_plans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="CHANGE PLAN"
+        android:textColor="@color/app_blue"
+        android:background="@drawable/blue_border"
+        android:padding="@dimen/padding_8_to_10"
+        android:visibility="visible"/>
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

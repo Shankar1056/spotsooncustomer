@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context="com.grumoon.pulllistview.sample.AddExtraHeaderFragment1">
+
+        <com.grumoon.pulllistview.PullListView
+            android:id="@+id/plv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:divider="@color/gray"
+            android:dividerHeight="0.5dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nobusiness"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagefornobusiness"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/no_connections" />
+
+        <com.utility.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dontnot_havshops"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:textColor="@color/catagories"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_below="@id/imagefornobusiness"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_inventum_status"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_color"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:minHeight="@dimen/abc_action_bar_default_height_material" />
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_inventum_status"
+        android:layout_marginTop="30dp"
+        android:visibility="visible">
+    </ScrollView>-->
+
+    <RelativeLayout
+        android:id="@+id/status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_inventum_status"
+        android:layout_marginTop="30dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/status_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/success"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/status_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/status_image"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/oredrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/status_message"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+        <com.utility.CustomTextView
+            android:id="@+id/tv_orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ORDER ID : "
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+           android:layout_marginRight="5dp" />
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_payuId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+        </LinearLayout>
+
+        <com.utility.CustomTextView
+            android:id="@+id/pending_status_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/oredrLayout"
+            android:layout_marginTop="10dp"
+            android:textColor="#343434"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/addView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pending_status_message"
+            android:layout_above="@+id/got_it"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/got_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OKAY"
+            android:textColor="@android:color/white"
+            android:background="@drawable/blue_btn_round_corner"
+            android:textSize="@dimen/submit_button_TextSize"
+            android:layout_margin="@dimen/submit_button_margin"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:id="@+id/progressLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_below="@id/pending_status_message">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="42dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

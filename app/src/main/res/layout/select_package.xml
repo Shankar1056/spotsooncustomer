@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_select_packages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+    <RelativeLayout
+        android:id="@+id/current_plan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_toLeftOf="@+id/change_plan"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_current_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your current plan"
+                android:textColor="@color/cb_dark_grey"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/current_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_current_plan"
+                android:text="Plan Name"
+                android:textColor="@color/app_blue"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/change_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="CHANGE PLAN"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/blue_btn_round_corner_selector"
+            android:visibility="invisible"/>
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/change_plan"
+            android:background="@color/app_blue"/>
+
+        <ListView
+            android:id="@+id/current_plans_listView"
+            android:layout_below="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/plans_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

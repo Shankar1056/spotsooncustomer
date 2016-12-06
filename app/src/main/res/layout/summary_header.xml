@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/merchant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <com.utility.CustomTextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name : -- "
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+          />
+            <com.utility.CustomTextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:text="User ID : --"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+               />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:gravity="center">
+            <com.utility.CustomTextView
+                android:id="@+id/view_plans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="CHANGE PLAN"
+                android:textColor="@color/app_blue"
+                android:background="@drawable/blue_border"
+                android:padding="8dp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

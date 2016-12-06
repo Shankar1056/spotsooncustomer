@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <com.utility.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_back_with_stroke"
+        android:layout_margin="8dp"
+        android:textColor="@color/product_name"
+        android:textSize="@dimen/textsize_7inch"
+        android:padding="8dp"
+        android:gravity="left"
+        android:text="On SpotSoon you'll find many of your trusted businesses you can directly connect. You have the choice to see their offering, raise complaints and pay them online.\n\nWe are here to make your journey with each local business rewarding and avoid annoyance of providing exact cash change, merchants knocking your doors for payments and waiting for the service to be initiated.\n\nThere are times when you wish you could pay online and avoid interrupted service. You can actually do that now with SpotSoon."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <com.utility.CustomTextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Version 1.0"/>
+
+        <com.utility.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="SPOTASAP Technologies Pvt. Limited"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height_7inch"
+    android:background="@color/actionbar_color">
+
+        <com.utility.CustomTextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/myprofile"
+                  android:layout_margin="0dp"
+                  android:textColor="#ffffff"
+                 android:layout_centerVertical="true"
+                 android:id="@+id/headerpagetv"
+                  android:textSize="@dimen/textsize_18_t0_20"
+            />
+
+
+        <RelativeLayout
+                android:layout_width="?android:actionBarSize"
+                android:layout_height="?android:actionBarSize"
+                android:id="@+id/edit_profile"
+                android:layout_alignParentRight="true"
+            android:visibility="gone"
+                android:background="@drawable/actionbar_selector"
+                >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/searchlocation"
+                       android:background="@drawable/editor_pen_selector"
+                       android:layout_centerVertical="true"
+                       android:layout_centerHorizontal="true"
+                    />
+</RelativeLayout>
+
+       <!-- <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/editor_pen_selector"
+                     android:textColor="#ffffff"
+                     android:layout_alignParentRight="true"
+                     android:id="@+id/edit_profile"
+                     android:layout_margin="10dp"
+               />-->
+    </RelativeLayout>
+

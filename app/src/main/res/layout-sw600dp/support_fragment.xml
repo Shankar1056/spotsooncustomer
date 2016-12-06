@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundcolor">
+
+
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                   android:layout_margin="@dimen/margin7_to_10"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/support_pro_white_background"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/white_background1">
+
+        <com.utility.CustomTextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="For any support and queries please contact us by email or phone"
+                  android:textSize="@dimen/textsize_15_t0_17"
+                  android:layout_marginTop="@dimen/margin_15_to_18"
+                  android:paddingLeft="@dimen/padding_5_to_8"
+                  android:layout_centerHorizontal="true"
+                  android:id="@+id/text_contact"
+                  android:textColor="#827f7f"/>
+
+
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_contact"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin_20_to_26"
+                        android:id="@+id/mailus_layout"
+                        android:background="@drawable/support_mailus">
+
+            <com.utility.CustomTextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="DROP US AN EMAIL"
+                      android:id="@+id/drop_email"
+                      android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true"
+                      android:textSize="@dimen/textsize_16_t0_18"
+                      android:textColor="#ffffff"
+                     />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@+id/drop_email"
+                       android:layout_marginLeft="@dimen/margin_5_to_8"
+                       android:background="@drawable/support_customer_sms_icon"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mailus_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin_20_to_26"
+                        android:id="@+id/call_us_layout"
+                        android:background="@drawable/support_mailus">
+
+            <com.utility.CustomTextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="CALL US"
+                      android:id="@+id/call_us1"
+                      android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true"
+                      android:textSize="@dimen/textsize_16_t0_18"
+                      android:textColor="#ffffff"
+                    />
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@+id/call_us1"
+                       android:layout_marginLeft="@dimen/margin_5_to_8"
+                       android:background="@drawable/support_customer_call_icon"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/support_customer_second_white_background"
+                    android:layout_below="@+id/white_background1"
+                    android:layout_marginTop="@dimen/margin_3_to_5"
+                    android:layout_marginLeft="@dimen/margin7_to_10"
+                    android:layout_marginRight="@dimen/margin7_to_10"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/white_background2">
+
+
+         <com.utility.CustomTextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="General Issues and Questions"
+                   android:layout_marginLeft="@dimen/margin_15_to_18"
+                   android:textColor="#827f7f"
+                   android:layout_marginTop="@dimen/margin_15_to_18"
+                   android:id="@+id/issue"
+                   android:textSize="@dimen/textsize_16_t0_18"/>
+
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/suport_customer_small_white_outerbox"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/margin_10_t0_13"
+                            android:layout_marginRight="@dimen/margin_10_t0_13"
+                            android:layout_marginTop="@dimen/margin_10_t0_13"
+                            android:layout_below="@+id/issue"
+                android:id="@+id/relativeLayout">
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/account_layout"
+                                android:onClick="process"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/support_selector">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/support_customer_users_icon"
+                               android:id="@+id/uesr_icon"
+                               android:layout_marginLeft="@dimen/margin7_to_10"
+                               android:layout_centerVertical="true"/>
+
+
+                    <com.utility.CustomTextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/account"
+                              android:text="Account"
+                              android:layout_toRightOf="@+id/uesr_icon"
+                              android:textColor="#827f7f"
+                              android:textSize="@dimen/textsize_16_t0_18"
+                              android:layout_marginLeft="@dimen/margin7_to_10"
+                              android:layout_centerVertical="true"
+                             />
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/account_layout"
+                                android:id="@+id/payment_layout"
+                                android:onClick="process"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/support_selector">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/payment_icon"
+                               android:background="@drawable/support_customer_credit_card_icon"
+                               android:layout_marginLeft="@dimen/margin7_to_10"
+                               android:layout_centerVertical="true"/>
+
+
+                    <com.utility.CustomTextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Payment"
+                              android:layout_toRightOf="@+id/payment_icon"
+                              android:textColor="#827f7f"
+                              android:textSize="@dimen/textsize_16_t0_18"
+                              android:id="@+id/payment"
+                              android:layout_marginLeft="@dimen/margin7_to_10"
+                              android:layout_centerVertical="true"
+                            />
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/use_spotasap_layout"
+                                android:layout_below="@+id/payment_layout"
+                                android:onClick="process"
+                                android:background="@drawable/support_selector">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/spotasap_logo"
+                               android:background="@drawable/support_customer_spotasap_icon"
+                               android:layout_marginLeft="@dimen/margin7_to_10"
+                               android:layout_centerVertical="true"/>
+
+
+                    <com.utility.CustomTextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Refund &amp; cancellation"
+                              android:textColor="#827f7f"
+                              android:layout_toRightOf="@+id/spotasap_logo"
+                              android:textSize="@dimen/textsize_16_t0_18"
+                              android:id="@+id/Spotasap"
+                              android:layout_marginLeft="@dimen/margin7_to_10"
+                              android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_10_t0_13"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_pp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service "
+                android:textColor="#23a8eb"
+                android:textSize="@dimen/textsize_12_to_14"/>
+            <com.utility.CustomTextView
+                android:id="@+id/tv_and"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and "
+                android:textColor="#9d9d9d"
+                android:textSize="@dimen/textsize_12_to_14"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_pp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="#23a8eb"
+                android:textSize="@dimen/textsize_12_to_14"/>
+
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_pp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#23a8eb"
+                android:textSize="@dimen/textsize_12_to_14"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

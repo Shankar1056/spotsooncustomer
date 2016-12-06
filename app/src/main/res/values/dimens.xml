@@ -1,0 +1,127 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="submit_button_margin">10dp</dimen>
+    <dimen name="submit_button_TextSize">18dp</dimen>
+
+    <!-- 7 inch Tablet-->
+
+
+    <dimen name="textsize_7inch">19dp</dimen>
+    <dimen name="text_size_normal_7inch">15sp</dimen>
+    <dimen name="textsize_8_to_11">11sp</dimen>
+    <dimen name="textsize_10_to_12">12sp</dimen>
+    <dimen name="textsize_12_to_14">14sp</dimen>
+    <dimen name="textsize_11_to_13">13sp</dimen>
+    <dimen name="textsize_13_to_15">15sp</dimen>
+    <dimen name="textsize_14_t0_16">16sp</dimen>
+    <dimen name="textsize_15_t0_17">17sp</dimen>
+    <dimen name="textsize_16_t0_18">18sp</dimen>
+    <dimen name="textsize_17_to_19">19sp</dimen>
+    <dimen name="textsize_18_t0_20">20sp</dimen>
+    <dimen name="textsize_20_to_23">23sp</dimen>
+    <dimen name="textsize_25_to_32">32sp</dimen>
+    <dimen name="textsize_35_to_40">40sp</dimen>
+
+    <dimen name="toolbar_height_7inch">75dp</dimen>
+    <dimen name="toolbar_minimum_height_7inch">85dp</dimen>
+
+    <dimen name="height_30_t0_40">40dp</dimen>
+    <dimen name="height_40_to_49">49dp</dimen>
+
+    <dimen name="imagebutton_tab_7inch">85dp</dimen>
+    <dimen name="imageview_40_to_50">50dp</dimen>
+    <dimen name="imageview_45_to_55">55dp</dimen>
+    <dimen name="imagesize_50_to_65">65dp</dimen>
+    <dimen name="imageview_60_to_70">70dp</dimen>
+    <dimen name="imageview_80_to_90">90dp</dimen>
+
+    <dimen name="drawer_listview_width_7inch">320dp</dimen>
+    <dimen name="crossimage_7inch">30dp</dimen>
+
+    <dimen name="padding_2_to_3">3dp</dimen>
+    <dimen name="padding_3_to_4">4dp</dimen>
+    <dimen name="padding_5_to_8">8dp</dimen>
+    <dimen name="padding_8_to_10">10dp</dimen>
+    <dimen name="padding_10_t0_13">14dp</dimen>
+    <dimen name="padding_12_t0_14">14dp</dimen>
+    <dimen name="padding_15_to_17">17dp</dimen>
+    <dimen name="padding_20_to_27">27dp</dimen>
+    <dimen name="padding_53_to_63">63dp</dimen>
+
+    <dimen name="margin_3_to_5">5dp</dimen>
+    <dimen name="margin_4_to_6">6dp</dimen>
+    <dimen name="margin_5_to_8">8dp</dimen>
+    <dimen name="margin7_to_10">10dp</dimen>
+    <dimen name="margin_10_to_13">13dp</dimen>
+    <dimen name="margin_10_t0_13">13dp</dimen>
+    <dimen name="margin_15_to_18">18dp</dimen>
+    <dimen name="margin_30_to_38">38dp</dimen>
+    <dimen name="margin_20_to_26">26dp</dimen>
+    <dimen name="margin_25_to_30">30dp</dimen>
+    <dimen name="margin_35_to_42">42dp</dimen>
+    <dimen name="margin_40_to_47">47dp</dimen>
+    <dimen name="margin_50_to_65">65dp</dimen>
+
+
+
+   <!-- 10 inch tablet-->
+
+    <dimen name="textsize_10inch">19dp</dimen>
+    <dimen name="text_size_normal_10inch">15sp</dimen>
+    <dimen name="textsize_8_to_11_10inch">11sp</dimen>
+    <dimen name="textsize_10_to_12_10inch">12sp</dimen>
+    <dimen name="textsize_12_to_14_10inch">14sp</dimen>
+    <dimen name="textsize_11_to_13_10inch">13sp</dimen>
+    <dimen name="textsize_13_to_15_10inch">15sp</dimen>
+    <dimen name="textsize_14_t0_16_10inch">16sp</dimen>
+    <dimen name="textsize_15_t0_17_10inch">17sp</dimen>
+    <dimen name="textsize_16_t0_18_10inch">18sp</dimen>
+    <dimen name="textsize_17_to_19_10inch">19sp</dimen>
+    <dimen name="textsize_18_t0_20_10inch">20sp</dimen>
+    <dimen name="textsize_20_to_23_10inch">23sp</dimen>
+    <dimen name="textsize_25_to_32_10inch">32sp</dimen>
+    <dimen name="textsize_35_to_40_10inch">40sp</dimen>
+
+    <dimen name="toolbar_height_10inch">75dp</dimen>
+    <dimen name="toolbar_minimum_height_10inch">85dp</dimen>
+
+    <dimen name="imagebutton_tab_10inch">85dp</dimen>
+    <dimen name="imageview_40_to_50_10inch">50dp</dimen>
+    <dimen name="imageview_45_to_55_10inch">55dp</dimen>
+    <dimen name="imagesize_50_to_65_10inch">65dp</dimen>
+    <dimen name="imageview_60_to_70_10inch">70dp</dimen>
+    <dimen name="imageview_80_to_90_10inch">90dp</dimen>
+
+    <dimen name="drawer_listview_width_10inch">320dp</dimen>
+    <dimen name="crossimage_10inch">30dp</dimen>
+
+    <dimen name="padding_2_to_3_10inch">3dp</dimen>
+    <dimen name="padding_3_to_4_10inch">4dp</dimen>
+    <dimen name="padding_5_to_8_10inch">8dp</dimen>
+    <dimen name="padding_8_to_10_10inch">10dp</dimen>
+    <dimen name="padding_10_t0_13_10inch">14dp</dimen>
+    <dimen name="padding_12_t0_14_10inch">14dp</dimen>
+    <dimen name="padding_15_to_17_10inch">17dp</dimen>
+    <dimen name="padding_20_to_27_10inch">27dp</dimen>
+    <dimen name="padding_53_to_63_10inch">63dp</dimen>
+
+    <dimen name="margin_3_to_5_10inch">5dp</dimen>
+    <dimen name="margin_4_to_6_10inch">6dp</dimen>
+    <dimen name="margin_5_to_8_10inch">8dp</dimen>
+    <dimen name="margin7_to_10_10inch">10dp</dimen>
+    <dimen name="margin_10_to_13_10inch">13dp</dimen>
+    <dimen name="margin_10_t0_13_10inch">13dp</dimen>
+    <dimen name="margin_15_to_18_10inch">18dp</dimen>
+    <dimen name="margin_30_to_38_10inch">38dp</dimen>
+    <dimen name="margin_20_to_26_10inch">26dp</dimen>
+    <dimen name="margin_25_to_30_10inch">30dp</dimen>
+    <dimen name="margin_35_to_42_10inch">42dp</dimen>
+    <dimen name="margin_40_to_47_10inch">47dp</dimen>
+    <dimen name="margin_50_to_65_10inch">65dp</dimen>
+
+
+
+</resources>

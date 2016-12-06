@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/list_item_selector">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_12_t0_14">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timingiv"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:background="@drawable/location_default"
+                android:layout_marginLeft="0dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/timingiv"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_centerVertical="true">
+
+            <com.utility.CustomTextView
+                android:id="@+id/location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/addressname"
+                android:textSize="@dimen/textsize_16_t0_18"
+                android:text="Kolar"/>
+
+            <com.utility.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/address_textview"
+                android:singleLine="true"
+                android:textColor="#A0A0A0"
+                android:text="Karnataka, India"
+                android:layout_below="@+id/location_name"
+                android:textSize="@dimen/text_size_normal_7inch"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

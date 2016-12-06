@@ -1,0 +1,10 @@
+<resources>
+
+    <!--Taking default dimen as hdpi-->
+
+
+    <dimen name="size_15px">15px</dimen>
+
+
+
+</resources>

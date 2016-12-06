@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundcolor">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suggest_layout"
+                    android:layout_alignParentBottom="true">
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RECOMMEND"
+                android:id="@+id/recommend"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_18_t0_20"
+                android:background="@drawable/sign_in"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:id="@+id/scroll_activation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/suggest_layout"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin7_to_10"
+            android:background="@color/white">
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="@dimen/margin7_to_10"
+                   >
+
+        <com.utility.CustomTextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Recommend your favourite merchant/vendor"
+                  android:textColor="#827f7f"
+                  android:textSize="@dimen/textsize_15_t0_17"
+                  android:id="@+id/textRecommend"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="@dimen/margin_10_t0_13"
+                />
+
+
+        <com.utility.CustomTextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/textRecommend"
+                  android:id="@+id/drop_cat"
+                  android:layout_marginTop="@dimen/margin_15_to_18"
+                  android:hint="Category"
+                  android:textColorHint="#b1b1b1"
+                  android:padding="@dimen/padding_5_to_8"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/suggest_dropdown_text_box"
+
+                />
+
+        <com.utility.CustomEditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/drop_cat"
+                  android:layout_marginTop="@dimen/margin_15_to_18"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Business Name"
+                  android:textColorHint="#b1b1b1"
+                  android:id="@+id/business_name"
+                  android:textSize="@dimen/textsize_15_t0_17"
+                 android:padding="@dimen/padding_5_to_8"
+                 android:background="@drawable/suggest_input_text_box"/>
+
+        <com.utility.CustomEditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/business_name"
+                  android:layout_marginTop="@dimen/margin_15_to_18"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Area"
+                  android:id="@+id/area"
+                  android:textColorHint="#b1b1b1"
+                  android:textSize="@dimen/textsize_15_t0_17"
+                  android:padding="@dimen/padding_5_to_8"
+                  android:background="@drawable/suggest_input_text_box"/>
+
+        <com.utility.CustomEditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/area"
+                  android:layout_marginTop="@dimen/margin_10_t0_13"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Phone Number (Optional) "
+                  android:inputType="number"
+                  android:textColorHint="#b1b1b1"
+                  android:id="@+id/phone_number"
+                  android:textSize="@dimen/textsize_15_t0_17"
+                  android:padding="@dimen/padding_5_to_8"
+                  android:background="@drawable/suggest_input_text_box"/>
+
+
+
+            <com.utility.CustomEditText android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="Comments (Optional) "
+                      android:textColorHint="#b1b1b1"
+                      android:layout_marginTop="@dimen/margin_15_to_18"
+                      android:layout_centerHorizontal="true"
+                      android:layout_below="@+id/phone_number"
+                      android:id="@+id/comments"
+                      android:inputType="textMultiLine"
+                      android:paddingTop="@dimen/padding_2_to_3"
+                      android:paddingLeft="@dimen/padding_3_to_4"
+                      android:background="@drawable/suggest_comments_input_text_box"
+                      android:textSize="@dimen/textsize_15_t0_17"
+
+                     /><!--  android:background="@color/white"-->
+        <com.utility.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpletext"
+            android:text=""
+            android:layout_marginTop="@dimen/margin_3_to_5"
+            android:layout_below="@+id/comments"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+</RelativeLayout>

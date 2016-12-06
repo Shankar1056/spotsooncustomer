@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_blue"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_20_to_27"
+        android:paddingBottom="@dimen/padding_20_to_27"
+        android:paddingLeft="@dimen/padding_10_t0_13"
+        android:paddingRight="@dimen/padding_10_t0_13">
+
+        <ImageButton
+            android:id="@+id/cancel_popup"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/close_cross"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_other_plans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cancel_popup"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_16_t0_18"
+            android:text="other plans from"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cancel_popup"
+            android:layout_below="@+id/tv_other_plans"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_18_t0_20"
+            android:text="Business Name"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10_t0_13"
+        android:text="CHANGE TO SELECTED PLAN"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_18_t0_20"
+        android:background="@drawable/blue_round_btn_selector"
+        android:visibility="gone"/>
+
+    <ExpandableListView
+        android:id="@+id/plans_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_above="@+id/change_plan"
+        android:divider="@color/backgroundcolor">
+    </ExpandableListView>
+
+</RelativeLayout>

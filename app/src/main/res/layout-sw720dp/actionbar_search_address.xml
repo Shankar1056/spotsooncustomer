@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/search_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height_7inch"
+        android:paddingLeft="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/app_color_selector">
+
+        <com.utility.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR LOCATION"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_11_to_13"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.utility.CustomTextView
+                android:id="@+id/localitytv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetching location..."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_14_t0_16"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dropdown"
+                android:layout_marginLeft="@dimen/margin_5_to_8"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

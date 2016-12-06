@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/singlecategoryitems"
+                android:layout_height="@dimen/toolbar_height_7inch">
+
+    <com.utility.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkgray"
+            android:text=""
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_marginStart="@dimen/margin_30_to_38"
+            android:layout_centerVertical="true"
+            android:id="@+id/cat_item"
+            android:textSize="@dimen/textsize_15_t0_17"/>
+
+</RelativeLayout>

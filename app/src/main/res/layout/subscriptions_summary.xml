@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolbar_subcriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_subcriptions">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="130dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/summary_header" />
+
+            <RelativeLayout
+                android:id="@+id/package_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#9d9d9d" />
+
+                <com.utility.CustomTextView
+                    android:id="@+id/package_name_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/dots"
+                    android:text=""
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#9d9d9d"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/package_price_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dots"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:text="00"
+                    android:textColor="#9d9d9d"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/background_gray"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_payment_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:paddingTop="10dp"
+                    android:text="Payment Information"
+                    android:textColor="#9d9d9d"/>
+                <LinearLayout
+                    android:id="@+id/details_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/tv_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DETAILS"
+                        android:textColor="@color/app_blue"
+                        android:textSize="10sp"/>
+
+                    <ImageView
+                        android:id="@+id/arrow_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/arrow"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/summary_row_item"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <!--<include
+                android:id="@+id/footer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/summary_footer" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/background_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/totalamount_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/totalamount_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/totalamount_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/totalamount_dots"
+                    android:text="Payable Amount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/totalamount_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/totalamount_dots"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:text="00"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rechare_now_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/rechare_now_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_btn_selector" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/app_blue"
+                            android:text="Recharge Now"/>
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#9d9d9d"
+                            android:textSize="12sp"
+                            android:text="The above plan will get implemented immediately and subscripton cycle will restart."/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rechare_later_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/rechare_later_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_btn_selector"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/app_blue"
+                            android:text="Recharge Later"/>
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#9d9d9d"
+                            android:textSize="12sp"
+                            android:text="The above plan will get implemented on the selected date."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/recharges_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/rechare_now_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/rechare_now_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_btn_selector" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/app_blue"
+                            android:text="Recharge Now"/>
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#9d9d9d"
+                            android:textSize="12sp"
+                            android:text="The above plan will take effect immediately and subscripton cycle will restart."/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rechare_post_expire_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/rechare_post_expire_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_btn_selector"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/postExpirationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/app_blue"
+                            android:text="Recharge Post Expiration"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.utility.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#9d9d9d"
+                                android:textSize="12sp"
+                                android:text="This recharge will be effective from"/>
+
+                            <com.utility.CustomTextView
+                                android:id="@+id/post_recharge_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:text=""/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rechare_later_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/rechare_later_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_btn_selector"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.utility.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/app_blue"
+                                android:text="Recharge Later"/>
+
+                            <com.utility.CustomTextView
+                                android:id="@+id/rechare_later_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ed1c24"
+                                android:text=""
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+
+                        <com.utility.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#9d9d9d"
+                            android:textSize="12sp"
+                            android:text="The above plan will take effect on the selected date."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/previous_renewal_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/previous_renewal_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/lightblue"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/previous_renewal_date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/previous_renewal_dots"
+                    android:text="Previous Renewal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/lightblue"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/previous_renewal_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/previous_renewal_dots"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="--"
+                    android:textColor="@color/lightblue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/next_renewal_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/next_renewal_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/lightblue"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/next_renewal_date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/next_renewal_dots"
+                    android:text="Your current plan expires on"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/lightblue"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/next_renewal_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/next_renewal_dots"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="--"
+                    android:textColor="@color/lightblue"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--android:background="#E7E5E8"-->
+    <LinearLayout
+        android:id="@+id/proceed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#ffFFFFFF">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/payu"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/submit_button_margin"
+            android:text="proceed to payment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/submit_button_TextSize"
+            android:background="@drawable/blue_round_btn_selector"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ticket_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/proceed_layout"
+        android:background="#E7E5E8"
+        android:visibility="visible"/>
+    <!--android:src="@drawable/ticket_border"-->
+
+</RelativeLayout>

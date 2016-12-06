@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/summary_payment_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#E7E5E8">
+
+    <LinearLayout
+        android:id="@+id/selected_packages_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/package_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.utility.CustomTextView
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dots"
+            android:text="IRIS GOLD(x2)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/package_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dots"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="00"
+            android:textColor="#9d9d9d"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pre_due_layout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.utility.CustomTextView
+            android:id="@+id/dots1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_pre_due"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dots1"
+            android:text="Previous Due"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/pre_due_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dots1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="00"
+            android:textColor="#9d9d9d"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tax_layout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.utility.CustomTextView
+            android:id="@+id/dots2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_tax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dots2"
+            android:text="Tax"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tax_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dots2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="00"
+            android:textColor="#9d9d9d"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/convinience_layout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.utility.CustomTextView
+            android:id="@+id/dots3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_convinience_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dots3"
+            android:text="Convenience Fee"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/convinience_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dots3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="00"
+            android:textColor="#9d9d9d"/>
+    </RelativeLayout>
+</LinearLayout>

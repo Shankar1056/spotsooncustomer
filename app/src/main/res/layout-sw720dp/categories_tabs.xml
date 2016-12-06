@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_round_btn_selector"
+        android:visibility="gone"/>-->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight=".66">
+
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/business_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/business_pic"
+            android:layout_width="@dimen/imagebutton_tab_7inch"
+            android:layout_height="@dimen/imagebutton_tab_7inch"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+      <!--  android:layout_below="@+id/business_pic"-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabTextColor="@color/gray"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabBackground="@android:color/transparent"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabMode="scrollable"
+            app:tabGravity="center"
+            android:layout_marginBottom="@dimen/margin_10_t0_13"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_package"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/ToolBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height_7inch"
+            android:background="@android:color/transparent"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            android:minHeight="@dimen/toolbar_height_7inch"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".38">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundcolor">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suggest_layout"
+                    android:layout_alignParentBottom="true">
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RECOMMEND"
+                android:id="@+id/recommend"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:background="@drawable/sign_in"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:id="@+id/scroll_activation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/suggest_layout"
+            android:layout_alignParentTop="true"
+            android:layout_margin="7dp"
+            android:background="@color/white">
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="7dp"
+                   >
+
+        <com.utility.CustomTextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Recommend your favourite merchant/vendor"
+                  android:textColor="#827f7f"
+                  android:textSize="15sp"
+                  android:id="@+id/textRecommend"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="10dp"
+                />
+
+        <!--<RelativeLayout android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/textRecommend"-->
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+
+                        <!--android:id="@+id/rllayu">-->
+            <!--<Spinner-->
+                    <!--android:id="@+id/spinner"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/suggest_dropdown_text_box"-->
+                    <!--android:prompt="@string/spinner_title"-->
+                    <!--/>-->
+
+                  <!--&lt;!&ndash;<TextView android:layout_width="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:hint="Categary"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textSize="15sp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginStart="5dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textColorHint="#b1b1b1"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/Categary"/>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<ImageButton android:layout_width="wrap_content"&ndash;&gt;-->
+                                 <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                 <!--&lt;!&ndash;android:layout_alignTop="@+id/spinner"&ndash;&gt;-->
+                                 <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                 <!--&lt;!&ndash;android:id="@+id/Categarydropdown"&ndash;&gt;-->
+                                 <!--&lt;!&ndash;android:background="@drawable/suggest_list_btn_off"/>&ndash;&gt;-->
+
+
+
+
+        <!--</RelativeLayout>-->
+
+        <com.utility.CustomTextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/textRecommend"
+                  android:id="@+id/drop_cat"
+                  android:layout_marginTop="14dp"
+                  android:hint="Category"
+                  android:textColorHint="#b1b1b1"
+                  android:padding="5dp"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/suggest_dropdown_text_box"
+
+                />
+
+        <com.utility.CustomEditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/drop_cat"
+                  android:layout_marginTop="15dp"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Business Name"
+                  android:textColorHint="#b1b1b1"
+                  android:id="@+id/business_name"
+                  android:textSize="15sp"
+                 android:padding="5dp"
+                 android:background="@drawable/suggest_input_text_box"/>
+
+        <com.utility.CustomEditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/business_name"
+                  android:layout_marginTop="15dp"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Area"
+                  android:id="@+id/area"
+                  android:textColorHint="#b1b1b1"
+                  android:textSize="15sp"
+                  android:padding="5dp"
+                  android:background="@drawable/suggest_input_text_box"/>
+
+        <com.utility.CustomEditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/area"
+                  android:layout_marginTop="15dp"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Phone Number (Optional) "
+                  android:inputType="number"
+                  android:textColorHint="#b1b1b1"
+                  android:id="@+id/phone_number"
+                  android:textSize="15sp"
+                  android:padding="5dp"
+                  android:background="@drawable/suggest_input_text_box"/>
+
+
+        <!--<RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:id="@+id/comment_layout"
+                        android:background="@drawable/suggest_comments_input_text_box"
+                        android:layout_below="@+id/phone_number">
+        </RelativeLayout>-->
+
+            <com.utility.CustomEditText android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="Comments (Optional) "
+                      android:textColorHint="#b1b1b1"
+                      android:layout_marginTop="15dp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_below="@+id/phone_number"
+                      android:id="@+id/comments"
+                      android:inputType="textMultiLine"
+                      android:paddingTop="2dp"
+                      android:paddingLeft="3dp"
+                      android:background="@drawable/suggest_comments_input_text_box"
+                      android:textSize="15sp"
+
+                     /><!--  android:background="@color/white"-->
+        <com.utility.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpletext"
+            android:text=""
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/comments"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+</RelativeLayout>

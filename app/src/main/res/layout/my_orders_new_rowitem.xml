@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <com.utility.CustomTextView
+            android:id="@+id/business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galaxy Gold"
+            android:textColor="#010101"
+            android:textSize="12sp"
+            android:layout_weight=".3"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"/>
+            <com.utility.CustomTextView
+                android:id="@+id/paymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:layout_weight=".7"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center|right"/>
+        </LinearLayout>
+        <com.utility.CustomTextView
+            android:id="@+id/business_name_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galaxy Cable Networks, RT Nagar"
+            android:textColor="#9d9d9d"
+            android:textSize="10sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/product_name"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.utility.CustomTextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID : 123456"
+                android:textColor="#9d9d9d"
+                android:textSize="10sp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/details_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DETAILS"
+                    android:textColor="@color/app_blue"
+                    android:textSize="10sp"/>
+
+                <ImageView
+                    android:id="@+id/arrow_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/arrow"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        layout="@layout/myorder_more_details"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/more_details_invoice_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F6F6"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/selected_packages_invoice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <RelativeLayout
+            android:id="@+id/package_invoice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.utility.CustomTextView
+                android:id="@+id/invoice_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#9d9d9d"
+                android:textSize="12sp"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/package_invoice_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/invoice_dots"
+                android:text="Total Payable"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#9d9d9d"
+                android:textSize="12sp"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/totalpayable_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/invoice_dots"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="00"
+                android:textColor="#9d9d9d"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pre_due_invoice_layout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.utility.CustomTextView
+                android:id="@+id/invoice_dots1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#9d9d9d"
+                android:textSize="12sp"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_pre_invoice_due"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/invoice_dots1"
+                android:text="Paid"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#9d9d9d"
+                android:textSize="12sp"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/paid_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/invoice_dots1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="00"
+                android:textSize="12sp"
+                android:textColor="#9d9d9d"/>
+        </RelativeLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/product_name"/>
+
+        <RelativeLayout
+            android:id="@+id/totalamount_invoice_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.utility.CustomTextView
+                android:id="@+id/totalamount_invoice_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/totalamount_invoice_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/totalamount_invoice_dots"
+                android:text="Outstanding"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/outstanding_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/totalamount_invoice_dots"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="00"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/product_name"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_last_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last payment made"
+                    android:textColor="#343434"
+                    android:textSize="10sp"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/last_payment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 Mar 2016"
+                    android:textColor="#343434"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_renewal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Renewal"
+                    android:textColor="#ff1d05"
+                    android:textSize="10sp"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/renewal_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="10 Apr 2016"
+                    android:textColor="#ff1d05"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/status_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:minHeight="2dp"
+            android:maxHeight="2dp"
+            android:layout_marginTop="20dp"
+            android:max="2"
+            android:thumb="@drawable/status_circle"
+            android:enabled="false"
+            android:progress="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+
+            <com.utility.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submitted"
+                android:textColor="#343434"
+                android:layout_weight="1"/>
+
+            <com.utility.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Processing"
+                android:gravity="center"
+                android:textColor="#343434"
+                android:layout_weight="1"/>
+
+            <com.utility.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:gravity="right"
+                android:textColor="#343434"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+</LinearLayout>

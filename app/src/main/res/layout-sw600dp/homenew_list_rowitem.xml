@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_10_t0_13"
+        android:paddingLeft="@dimen/padding_10_t0_13"
+        android:paddingRight="@dimen/padding_10_t0_13">
+
+        <ImageView
+            android:id="@+id/business_image"
+            android:layout_width="@dimen/imageview_40_to_50"
+            android:layout_height="@dimen/imageview_40_to_50"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            >
+
+            <com.utility.CustomTextView
+                android:id="@+id/business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_13_to_15"
+                android:textColor="@android:color/black"
+                android:text="Galaxy Digital Network"
+                android:singleLine="true"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/business_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_10_to_12"
+                android:textColor="@color/product_name"
+                android:text="Cable Tv Subscriptions"
+                android:singleLine="true"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/business_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_10_to_12"
+                android:textColor="@color/product_name"
+                android:text="RT Nagar, Bangalore"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/due_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_10_t0_13"
+        android:paddingRight="@dimen/padding_10_t0_13"
+        android:layout_below="@+id/details_layout"
+        android:layout_marginTop="@dimen/margin_10_t0_13">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".3"
+        android:gravity="center_vertical">
+
+
+        <com.utility.CustomTextView
+            android:id="@+id/payment_due"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_10_to_12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/price_color"
+            android:text="Payment Due : Mar 2016"/>
+
+
+
+
+        <com.utility.CustomTextView
+            android:id="@+id/last_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/click_pay"
+            android:textSize="@dimen/textsize_10_to_12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/product_name"
+            android:text="Last payment made : 11 Mar 2016"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".7"
+        android:gravity="center">
+
+
+        <com.utility.CustomTextView
+            android:id="@+id/click_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_10_to_12"
+            android:textColor="@color/white"
+            android:text="CLICK TO PAY"
+            android:padding="@dimen/padding_10_t0_13"
+            android:background="@drawable/orange_btn_selecto"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/margin_5_to_8"
+        android:layout_below="@+id/due_layout"
+        android:background="@color/background_gray"/>
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F4">
+
+    <include
+        android:id="@+id/toolbar_subcriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+    <Button
+        android:id="@+id/all_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/submit_button_margin"
+        android:layout_alignParentBottom="true"
+        android:text="ALL DONE"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/submit_button_TextSize"
+        android:background="@drawable/blue_round_btn_selector"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/all_done"
+        android:layout_below="@+id/toolbar_subcriptions">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/product_name"
+                    android:textSize="14sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Please provide your Username, Smartcard number or registered phone number if available"/>
+
+                <com.utility.CustomEditText
+                    android:id="@+id/enter_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:hint="Enter here*"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/round_corner_back_with_stroke"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/div1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/layout1"
+                android:background="@color/background_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_below="@+id/div1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/white">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/house_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/house_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:hint="House Number, Street, Area*" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/landmark_layout"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/house_number_layout"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Landmark"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/landmark_layout"
+                    android:weightSum="2"
+                    android:baselineAligned="false">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/city_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="City*"
+                            android:maxLength="15"
+                            android:singleLine="true"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/pincode_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="10"
+                            android:hint="Pincode*"
+                            android:singleLine="true"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/layout2"
+                android:background="@color/background_gray"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

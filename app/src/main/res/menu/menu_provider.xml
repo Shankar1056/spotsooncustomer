@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools" >
+
+<!--<item
+        android:id="@+id/add_to_favourites"
+        app:showAsAction="always"
+        android:title="Add to favourites"/>-->
+
+    <item
+        android:id="@+id/location"
+        app:showAsAction="always"
+        android:title="Location"/>
+    <item
+        android:id="@+id/timings"
+        app:showAsAction="always"
+        android:title="Timings"/>
+    <!--<item
+        android:id="@+id/reviews"
+        app:showAsAction="always"
+        android:title="Reviews"/>-->
+
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="4dp">
+
+            <TextView
+                android:id="@+id/packageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Name"
+                android:textSize="@dimen/cb_eighteen"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#050505"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Due Date : 11-04-2017"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:gravity="right|center">
+            <com.utility.CustomTextView
+                android:id="@+id/view_plans"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/app_blue"
+                android:background="@drawable/blue_border"
+                android:padding="8dp"
+                android:gravity="center"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>

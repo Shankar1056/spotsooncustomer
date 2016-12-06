@@ -1,0 +1,107 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F4">
+
+    <LinearLayout
+        android:id="@+id/headerLayout_home_parent"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.utility.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect with Your Friendly Local Businesses"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:background="@android:color/transparent"
+            android:textColor="#555555"
+            android:singleLine="true"
+            android:padding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/headerLayout_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_gray"/>
+
+        <com.utility.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Recent Connections"
+            android:textColor="#555555"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/connected_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:visibility="visible"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_bookings"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_empty1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/no_connections"/>
+
+        <com.utility.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_empty1"
+            android:text="You haven't connected to \nany Business yet!"
+            android:textColor="#555555"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emptytext11"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/emptytext11"
+            android:background="@color/background_gray"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+<!--
+-->

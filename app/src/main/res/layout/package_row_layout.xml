@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/package_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.utility.CustomTextView
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/package_name_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dots"
+            android:text="Package Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#9d9d9d"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/package_price_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dots"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="00"
+            android:textColor="#9d9d9d"/>
+    </RelativeLayout>

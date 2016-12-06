@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundcolor">
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/submitbtn"
+                    android:layout_alignParentBottom="true">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOG OUT"
+                android:id="@+id/profile_button"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_18_t0_20"
+                android:background="@drawable/sign_in"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_margin="7dp"-->
+    <!--android:background="@color/white"-->
+
+    <!-->-->
+
+    <ScrollView
+            android:id="@+id/scroll_activation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/submitbtn"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin7_to_10"
+            android:background="@color/white">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="@dimen/margin_15_to_18"
+                        android:layout_marginRight="@dimen/margin_15_to_18"
+                        android:id="@+id/background_profile">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_customer_profile_image_frame"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/profile_image"
+                android:visibility="gone"/>
+
+            <com.utility.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_image"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin_30_to_38"
+                    android:layout_marginRight="@dimen/margin_30_to_38"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#ff444444"
+                    android:textSize="@dimen/textsize_16_t0_18"
+                    android:id="@+id/tvName_myProfile"/>
+
+
+            <com.utility.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName_myProfile"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profile_name"
+                    android:layout_marginLeft="@dimen/margin_30_to_38"
+                    android:layout_marginRight="@dimen/margin_30_to_38"
+                    android:text=""
+
+                    android:textColor="#343434"
+                    android:editable="false"
+                    android:background="#00000000"
+                    android:textSize="@dimen/textsize_16_t0_18"/>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/margin_25_to_30"
+                    android:layout_marginRight="@dimen/margin_25_to_30"
+                    android:layout_marginTop="@dimen/margin_10_t0_13"
+                    android:layout_marginBottom="@dimen/margin_10_t0_13"
+                    android:background="@drawable/profile_customer_divider"
+                    android:id="@+id/divder2_myProfile"/>
+
+            <com.utility.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_email"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/divder2_myProfile"
+                    android:layout_marginLeft="@dimen/margin_30_to_38"
+                    android:layout_marginRight="@dimen/margin_30_to_38"
+                    android:text=""
+                    android:editable="false"
+                    android:background="#00000000"
+                    android:textColor="#343434"
+                    android:textSize="@dimen/textsize_16_t0_18"/>
+
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/margin_25_to_30"
+                    android:layout_marginRight="@dimen/margin_25_to_30"
+                    android:layout_marginTop="@dimen/margin_10_t0_13"
+                    android:background="@drawable/profile_customer_divider"
+                    android:id="@+id/divder3_myProfile"/>
+
+            <com.utility.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divder3_myProfile"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin_30_to_38"
+                    android:layout_marginRight="@dimen/margin_30_to_38"
+                    android:editable="false"
+                    android:text=""
+                    android:background="#00000000"
+                    android:textColor="#343434"
+                    android:textSize="@dimen/textsize_16_t0_18"
+                    android:id="@+id/profile_number"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

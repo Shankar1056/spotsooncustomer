@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpotAsap">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        android:background="@drawable/splash"/>
+
+    <LinearLayout
+        android:id="@+id/ent_mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_corner_white_background"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+           />
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_conf_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="We will send an SMS with a confirmation code to this number"
+            android:textColor="#9d9d9d"
+            android:textSize="12sp"
+          />
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="this number"
+            android:textColor="#9d9d9d"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:text="+91"
+                android:textSize="14sp"
+                android:editable="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColorHint="@color/background_gray"
+                android:textColor="#8e8e8e"/>
+
+            <EditText
+                android:id="@+id/et_mobile_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Enter Mobile Number"
+                android:text=""
+                android:maxLength="10"
+                android:textColorHint="@color/background_gray"
+                android:textColor="#8e8e8e"
+                android:textSize="14sp"
+                android:inputType="phone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ent_num_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/next_btn_grey"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/verify_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_corner_white_background"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_verifying_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Verifying number, please wait"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_sent_conf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#9d9d9d"
+            android:textSize="12sp"/>
+
+        <ProgressBar
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:layout_margin="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="OR"
+                android:textSize="14sp"
+                android:textColor="@color/background_gray"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_toLeftOf="@+id/tv_or"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/background_gray"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_or"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/background_gray"/>
+        </RelativeLayout>
+
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_ent_manually"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Please enter activation code manually"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#343434"/>
+
+        <EditText
+            android:id="@+id/act_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter code"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="14sp"
+            android:textColorHint="@color/background_gray"
+            android:textColor="#8e8e8e"
+            android:inputType="number"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.utility.CustomTextView
+                android:id="@+id/resend_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#23a8eb"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="12sp"
+                android:text="Resend SMS OTP"/>
+
+            <com.utility.CustomTextView
+                android:id="@+id/resend_otp_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="#23a8eb"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="12sp"
+                android:text="Send OTP to Email"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/verify_num_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/next_btn_grey"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/size_15px"
+        android:layout_marginRight="@dimen/size_15px"
+        android:orientation="vertical"
+        android:background="@drawable/round_corner_white_background"
+        android:visibility="invisible">
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_almost_thr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Almost there!"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_welcome_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="Welcome to SPOTSOON you are just a step away"
+            android:textColor="#9d9d9d"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_enter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColorHint="@color/background_gray"
+            android:textColor="#8e8e8e"
+            android:inputType="textCapWords"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_enter_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:hint="Enter your Email ID"
+            android:gravity="center"
+            android:textColorHint="@color/background_gray"
+            android:textColor="#8e8e8e"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <com.utility.CustomTextView
+                android:id="@+id/tv_pp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="By creating an account, you agree to SPOTSOON's "
+                android:textColor="#9d9d9d"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_pp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of Service, "
+                    android:textColor="#23a8eb"
+                    android:textSize="12sp"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_pp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="#23a8eb"
+                    android:textSize="12sp"/>
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_and"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" and "
+                    android:textColor="#9d9d9d"
+                    android:textSize="12sp"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_pp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Content Policies"
+                    android:textColor="#23a8eb"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="@android:color/white"
+            android:background="@drawable/next_btn_grey"/>
+    </LinearLayout>
+  </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

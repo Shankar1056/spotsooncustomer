@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <ImageView
+        android:id="@+id/business_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_10_t0_13"
+            android:paddingBottom="@dimen/padding_10_t0_13"
+            android:layout_marginTop="@dimen/toolbar_minimum_height_7inch">
+
+            <ImageView
+                android:id="@+id/business_pic"
+                android:layout_width="@dimen/imageview_80_to_90"
+                android:layout_height="@dimen/imageview_80_to_90"
+                android:layout_margin="@dimen/margin_10_t0_13"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/image_round_corner"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/merchant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chetan Cable Network"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16_t0_18"
+                    android:singleLine="true"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/merchant_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tinfactory Nagar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16_t0_18"
+                    android:singleLine="true"/>
+
+                <com.utility.CustomTextView
+                    android:id="@+id/connect_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="You are connected"
+                    android:layout_marginTop="@dimen/margin_5_to_8"
+                    android:textSize="@dimen/textsize_10_to_12"
+                    android:drawableLeft="@drawable/check_green"
+                    android:drawablePadding="@dimen/padding_5_to_8"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10_t0_13"
+        android:layout_below="@+id/business_banner">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:background="@android:color/white">
+
+        <com.utility.CustomEditText
+            android:id="@+id/ent_userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_12_to_14"
+            android:drawableLeft="@drawable/antena"
+            android:drawablePadding="5dp"
+            android:textColor="#8e8e8e"
+            android:hint="Enter Your Internet Username (Account ID)"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_marginRight="@dimen/margin_10_t0_13"
+            android:layout_marginTop="@dimen/margin_20_to_26"
+            android:padding="0dp"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_gray"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_marginRight="@dimen/margin_10_t0_13"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_10_t0_13"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_marginRight="@dimen/margin_10_t0_13"
+            android:layout_marginBottom="@dimen/margin_20_to_26">
+
+            <com.utility.CustomTextView
+                android:id="@+id/proceed_to_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/orange_btn_selecto"
+                android:textColor="@android:color/white"
+                android:text="PROCEED TO PAY"
+                android:padding="@dimen/padding_10_t0_13"
+                android:textSize="@dimen/textsize_12_to_14"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/proceed_to_pay"
+                android:layout_marginRight="@dimen/margin_10_t0_13">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/secure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secure, "
+                        android:textColor="#009966"
+                        android:textSize="@dimen/textsize_12_to_14"/>
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/simple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0066cc"
+                        android:text="Simple"
+                        android:textSize="@dimen/textsize_12_to_14"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="and even more "
+                        android:singleLine="true"
+                        android:textColor="#9d9d9d"
+                        android:textSize="@dimen/textsize_12_to_14"/>
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/useful"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Useful"
+                        android:textColor="#ff6633"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textsize_12_to_14"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+       <LinearLayout
+            android:id="@+id/phonevalidation_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:visibility="gone"
+            android:background="@android:color/white"
+           >
+
+            <com.utility.CustomEditText
+                android:id="@+id/ent_last4nmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e"
+                android:padding="0dp"
+                android:layout_marginLeft="@dimen/margin_10_t0_13"
+                android:layout_marginRight="@dimen/margin_10_t0_13"
+                android:layout_marginTop="@dimen/margin_20_to_26"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_3_to_5"
+                android:background="@android:color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray"
+                android:layout_marginLeft="@dimen/margin_10_t0_13"
+                android:layout_marginRight="@dimen/margin_10_t0_13"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_10_t0_13"
+                android:layout_marginLeft="@dimen/margin_10_t0_13"
+                android:layout_marginRight="@dimen/margin_10_t0_13"
+                android:layout_marginBottom="@dimen/margin_20_to_26">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/proceed_to_pay_4digitphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/orange_btn_selecto"
+                    android:textColor="@android:color/white"
+                    android:text="PROCEED TO PAY"
+                    android:paddingLeft="@dimen/padding_10_t0_13"
+                    android:paddingRight="@dimen/padding_10_t0_13"
+                    android:paddingTop="@dimen/padding_10_t0_13"
+                    android:paddingBottom="@dimen/padding_10_t0_13"
+                    android:textSize="@dimen/textsize_12_to_14"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/proceed_to_pay_4digitphone"
+                    android:layout_marginRight="@dimen/margin_10_t0_13">
+
+                    <LinearLayout
+                        android:id="@+id/layout1_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/secure_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enter last 4 digit of phone number, "
+                            android:textColor="#009966"
+                            android:textSize="@dimen/textsize_12_to_14"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout2_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout1_new"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:visibility="invisible">
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/more_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="and even more "
+                            android:singleLine="true"
+                            android:textColor="#9d9d9d"
+                            android:textSize="@dimen/textsize_12_to_14"/>
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/useful_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Useful"
+                            android:textColor="#ff6633"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textsize_12_to_14"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/account_layout"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/cards_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10_t0_13"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/visa"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/amex"
+                android:layout_marginLeft="@dimen/margin_20_to_26"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mastercard"
+                android:layout_marginLeft="@dimen/margin_20_to_26"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/payu_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cards_layout"
+            android:background="@drawable/payu"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_inventum"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:minHeight="@dimen/toolbar_minimum_height_7inch" >
+
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/customer_back_icon_off"
+                android:layout_margin="@dimen/margin_10_t0_13"/>
+        </LinearLayout>
+
+        <com.utility.CustomTextView
+            android:id="@+id/more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MORE"
+            android:layout_gravity="right"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="@dimen/margin_10_t0_13"
+            android:visibility="gone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

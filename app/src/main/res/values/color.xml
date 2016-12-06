@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_blue">#23a8eb</color> <!-- #2196f3-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="actionbar_color">#FF0075BF</color>
+    <color name="selectedactionbar">#FF45A7E5</color>
+    <color name="lightblue">#ff13b5f8</color>
+    <color name="darkgray">#FF646262</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#FFE6E6E6</color>
+    <color name="addressname">#ff717171</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="catagories">#444444</color>
+    <color name="producatsname">#343434</color>
+    <color name="backgroundcolor">#F5F5F5</color>
+
+
+
+
+    <color name="pay_now">#ff6633</color>
+    <color name="pay_now_select">#cc3300</color>
+
+
+    <color name="background_gray">#cccccc</color>
+    <color name="product_name">#999999</color>
+    <color name="price_color">#ff3333</color>
+
+    <color name="grey_edittext">#d8d8d8</color>
+
+    <color name="banner_background">#666666</color>
+    <color name="menu_background">#f1f3f2</color>
+    <color name="closeopenbackground">#fff5f5f5</color>
+
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="status_bar_color">#066CAB</color>
+
+</resources>

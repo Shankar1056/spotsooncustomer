@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolbar_subcriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_subcriptions"
+        android:layout_above="@+id/ticket_border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/summary_header" />
+
+            <LinearLayout
+                android:id="@+id/selected_packages_layout_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/background_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.utility.CustomTextView
+                    android:id="@+id/tv_payment_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:paddingTop="10dp"
+                    android:text="Payment Information"
+                    android:textColor="#9d9d9d"/>
+                <LinearLayout
+                    android:id="@+id/details_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/tv_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DETAILS"
+                        android:textColor="@color/app_blue"
+                        android:textSize="10sp"/>
+
+                    <ImageView
+                        android:id="@+id/arrow_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/arrow"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/summary_row_item"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/footer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/summary_footer" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/proceed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#E7E5E8">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/payu"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/submit_button_margin"
+            android:text="proceed to payment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/submit_button_TextSize"
+            android:background="@drawable/blue_round_btn_selector"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ticket_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ticket_border"
+        android:layout_above="@+id/proceed_layout"
+        android:background="#E7E5E8"/>
+
+</RelativeLayout>

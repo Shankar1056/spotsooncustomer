@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/totalamount_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.utility.CustomTextView
+            android:id="@+id/totalamount_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/totalamount_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/totalamount_dots"
+            android:text="Payable Amount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/totalamount_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/totalamount_dots"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="00"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/previous_renewal_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.utility.CustomTextView
+            android:id="@+id/previous_renewal_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/lightblue"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/previous_renewal_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/previous_renewal_dots"
+            android:text="Previous Renewal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/lightblue"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/previous_renewal_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/previous_renewal_dots"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="--"
+            android:textColor="@color/lightblue"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/next_renewal_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.utility.CustomTextView
+            android:id="@+id/next_renewal_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/lightblue"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/next_renewal_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/next_renewal_dots"
+            android:text="Next Renewal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/lightblue"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/next_renewal_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/next_renewal_dots"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="--"
+            android:textColor="@color/lightblue"/>
+    </RelativeLayout>
+
+</LinearLayout>

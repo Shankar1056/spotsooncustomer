@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#b6b6b6" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/padding_20_to_27">
+
+        <ImageView
+            android:id="@+id/circleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_pic"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/circleView"
+            android:layout_marginLeft="@dimen/margin_10_t0_13"
+            android:layout_centerVertical="true"
+            android:text="Varun Theja"
+            android:textSize="@dimen/textsize_16_t0_18"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10_t0_13"
+            android:src="@drawable/profile_arrow"/>
+    </RelativeLayout>
+
+</RelativeLayout>

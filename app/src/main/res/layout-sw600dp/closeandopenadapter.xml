@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/upperlayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10_t0_13">
+
+                <ImageView
+                    android:id="@+id/business_image"
+                    android:layout_width="@dimen/imagesize_50_to_65"
+                    android:layout_height="@dimen/imagesize_50_to_65"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_corner_white_background"/>
+
+                <ImageView
+                    android:id="@+id/arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/notification_next_arrow_icon_on"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_10_t0_13"
+                    android:layout_marginRight="@dimen/margin_10_t0_13"
+                    android:layout_toRightOf="@+id/business_image"
+                    android:layout_toLeftOf="@+id/arrow_right">
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/business_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Galaxy Digital Network"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textsize_16_t0_18"/>
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/business_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Business Category"
+                        android:textSize="@dimen/text_size_normal_7inch"
+                        android:textColor="@color/product_name"/>
+
+                    <com.utility.CustomTextView
+                        android:id="@+id/business_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Galaxy Digital Network"
+                        android:textSize="@dimen/text_size_normal_7inch"
+                        android:textColor="@color/product_name"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+                android:id="@+id/co_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/imagerelativlayout"
+                android:layout_marginRight="10dp"
+                android:visibility="gone">
+            <TextView
+                    android:id="@+id/co_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="name"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/actionbar_color"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/co_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/co_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text="address"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+            <TextView
+                    android:id="@+id/co_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/co_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="distance"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/co_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                 android:paddingBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="openclose"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_toRightOf="@+id/co_status"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="invisible">
+
+            <ImageView
+                    android:id="@+id/co_payment_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                    android:id="@+id/co_payment_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                    android:id="@+id/co_payment_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imagerelativlayout"
+            android:layout_alignParentEnd="true">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/co_image" />
+    </RelativeLayout>
+</RelativeLayout>

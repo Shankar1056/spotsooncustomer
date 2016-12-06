@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/padding_10_t0_13">
+
+    <TextView
+        android:layout_margin="@dimen/margin_10_t0_13"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_rate_app"
+        android:text="@string/rete_app"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_20_to_23"/>
+
+    <TextView
+        android:textSize="@dimen/textsize_14_t0_16"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_rate_app"
+        android:id="@+id/tv_title"
+        android:textColor="#9d9d9d"
+        android:gravity="center"
+        android:text="Mind giving us a 5 star rating on Google Play ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_feedback_icon"
+        android:layout_margin="@dimen/margin_20_to_26"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rate_app_star"
+        android:layout_below="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/iv_feedback_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:padding="@dimen/padding_10_t0_13"
+            android:id="@+id/tv_nope"
+            android:textSize="@dimen/textsize_16_t0_18"
+            android:textColor="#cdcdcd"
+            android:text="Nope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="@dimen/padding_10_t0_13"
+            android:textColor="#23a8eb"
+            android:textSize="@dimen/textsize_16_t0_18"
+            android:id="@+id/tv_sure"
+            android:text="Yeah, Sure!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

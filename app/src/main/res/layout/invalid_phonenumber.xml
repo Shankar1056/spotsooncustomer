@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF8A80">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sadface"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#FFFFFF">
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Please enter last 4 digit of your phone number!"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:padding="10dp"/>
+        <com.utility.CustomTextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="It seems like you have entered an invalid phone number. Kindly note that the phone number should match with registered phone number"
+            android:textColor="@color/product_name"
+            android:textSize="12sp"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:gravity="left"
+            android:text="Please contact your local operator in case you have forgotten your phone number"
+            android:textColor="@color/product_name"
+            android:textSize="12sp"
+            android:padding="10dp"/>
+
+        <com.utility.CustomTextView
+            android:id="@+id/tv_gotid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:gravity="right"
+            android:text="GOT IT"
+            android:textColor="@color/app_blue"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

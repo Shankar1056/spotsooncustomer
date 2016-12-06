@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".66">
+            <RelativeLayout
+                android:id="@+id/banner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/business_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/business_profile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="00dp"
+                    android:layout_marginTop="80dp">
+
+                    <ImageView
+                        android:id="@+id/business_pic"
+                        android:layout_width="@dimen/imageview_60_to_70"
+                        android:layout_height="@dimen/imageview_60_to_70"
+                        android:layout_marginLeft="@dimen/margin_20_to_26"
+                        android:layout_marginRight="@dimen/margin_10_t0_13"
+                        android:layout_marginTop="@dimen/margin_5_to_8"
+                        android:layout_marginBottom="@dimen/margin_5_to_8"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/image_round_corner"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/merchant_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chetan Cable Network"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_16_t0_18"
+                            android:singleLine="true"/>
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/merchant_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tinfactory Nagar"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_16_t0_18"
+                            android:singleLine="true"/>
+
+                        <com.utility.CustomTextView
+                            android:id="@+id/connect_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="You are connected"
+                            android:layout_marginTop="@dimen/margin_5_to_8"
+                            android:textSize="@dimen/textsize_10_to_12"
+                            android:drawableLeft="@drawable/check_green"
+                            android:drawablePadding="5dp"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    app:tabTextColor="@color/gray"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabBackground="@android:color/transparent"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabMode="scrollable"
+                    app:tabGravity="center"
+                    android:layout_marginBottom="@dimen/margin_10_t0_13"/>
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_package"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/ToolBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetStart="0dp"
+                    android:minHeight="@dimen/toolbar_height_7inch"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".38"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/padding_53_to_63"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:background="@drawable/blue_round_btn_selector"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/margin_10_t0_13"
+                    android:layout_marginRight="@dimen/margin_10_t0_13"
+                    android:layout_marginBottom="@dimen/margin_5_to_8"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>

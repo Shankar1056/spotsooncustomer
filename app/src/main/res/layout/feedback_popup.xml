@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_help_us"
+        android:text="@string/helpus_dobetter"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_help_us"
+        android:id="@+id/tv_title"
+        android:textColor="#9d9d9d"
+        android:gravity="center"
+        android:text="Mind giving us a quick feedback ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_feedback_icon"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/feedback_icon"
+        android:layout_below="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/iv_feedback_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:id="@+id/tv_nope"
+            android:textSize="16sp"
+            android:textColor="#cdcdcd"
+            android:text="Nope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#23a8eb"
+            android:textSize="16sp"
+            android:id="@+id/tv_sure"
+            android:text="Yeah, Sure!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SearchAddressGooglePlacesActivity" >
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height_7inch"
+            android:background="@color/actionbar_color">
+
+            <ImageButton
+                android:id="@+id/cancel_search"
+                android:layout_width="@dimen/crossimage_7inch"
+                android:layout_height="@dimen/crossimage_7inch"
+                android:background="@drawable/close_cross"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10_to_13"/>
+
+            <com.utility.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select location"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_18_t0_20"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cureentlocationtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_12_t0_14"
+            android:paddingBottom="@dimen/padding_12_t0_14"
+            android:background="@color/cb_grey"
+            android:clickable="true">
+
+            <com.utility.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto-detect current location"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_14_t0_16"
+                android:layout_marginLeft="@dimen/margin_10_t0_13"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/current_location"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10_t0_13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10_t0_13"
+                android:layout_marginLeft="@dimen/margin_10_t0_13"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_marginRight="@dimen/margin_10_t0_13"
+                android:visibility="gone"/>
+
+            <com.utility.CustomEditText
+                android:id="@+id/atv_places"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_search"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:paddingTop="@dimen/padding_12_t0_14"
+                android:paddingBottom="@dimen/padding_12_t0_14"
+                android:hint="Start typing your location..."
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_address_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_layout"
+        android:background="#ffffff">
+    </ListView>
+
+</RelativeLayout>

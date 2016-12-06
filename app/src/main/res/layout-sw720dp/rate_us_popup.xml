@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/padding_10_t0_13">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_rate_us"
+        android:text="@string/rate_us"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_20_to_23"/>
+
+    <TextView
+        android:textSize="@dimen/textsize_14_t0_16"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_rate_us"
+        android:id="@+id/tv_title"
+        android:textColor="#9d9d9d"
+        android:gravity="center"
+        android:text="How do you like the experience with Spotsoon ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/tv_title"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_20_to_26"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/ll_meh"
+            android:clickable="true"
+            android:layout_margin="@dimen/margin_20_to_26"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rate_us">
+
+            <ImageView
+                android:layout_margin="@dimen/margin_10_t0_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/meh"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="@dimen/margin_10_t0_13"
+                android:text="Meh !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loved_it"
+            android:clickable="true"
+            android:layout_margin="@dimen/margin_20_to_26"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_rate_us"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="@dimen/margin_10_t0_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loved_it"/>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/margin_5_to_8"
+                android:layout_marginBottom="@dimen/margin_10_t0_13"
+                android:text="Loved it !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
