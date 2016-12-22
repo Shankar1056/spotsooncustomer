@@ -71,7 +71,7 @@ public class TacitineSummaryActivity extends AppCompatActivity implements View.O
     private PayuHashes payuHashes;
     private PayU_Hashpojo ServerResponse;
     private Intent intent;
-    private ImageView arrowView,purchase_new_pack_btn,renew_as_per_plan_btn;
+    private ImageView arrowView,purchase_new_pack_btn,renew_as_per_plan_btn,poweredby;
     private TextView userName,userId,total_amt,next_ren,view_plans;
     private TextView package_name,package_name_main,package_amount,package_amount_main,tax,tax_amount,convinience_amount;
     private SpotasManager session;
@@ -171,6 +171,7 @@ public class TacitineSummaryActivity extends AppCompatActivity implements View.O
         LinearLayout showDetailsLayout = (LinearLayout)findViewById(R.id.details_layout);
         detailsLayout = (LinearLayout)findViewById(R.id.summary_payment_layout);
         arrowView = (ImageView)findViewById(R.id.arrow_image);
+        poweredby = (ImageView)findViewById(R.id.poweredby);
         Button proceed = (Button)findViewById(R.id.proceed);
         proceed.setOnClickListener(this);
 
@@ -515,16 +516,18 @@ public class TacitineSummaryActivity extends AppCompatActivity implements View.O
                         JSONObject object = new JSONObject(jsonResponse);
                         String errFlag = object.getString("errFlag");
                         if (errFlag != null && errFlag.equalsIgnoreCase("0")) {
-                            String payuId = object.getString("payuId");
+                            if (object.has("payuId")) {
+                                mPayuId = object.getString("payuId");
+                            }
                             if (object.has("PaymentGateway")){
                                 PaymentGateway = object.getString("PaymentGateway");
                             }
-                            mPayuId = payuId;
+
 
                             if (PaymentGateway.equalsIgnoreCase("RAZORPAY")){
                                 startRazorPayment("" + Utility.round((Double.parseDouble(mTotal)) * 100 ));
                             }else {
-                                payu(payuId, "" + Utility.round(Double.parseDouble(mTotal)),
+                                payu(mPayuId, "" + Utility.round(Double.parseDouble(mTotal)),
                                         packageId);
                             }
 

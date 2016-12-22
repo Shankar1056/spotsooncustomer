@@ -34,8 +34,8 @@ android {
         applicationId 'com.spotsoon.customer'
         minSdkVersion 11
         targetSdkVersion 22
-        versionCode 14
-        versionName "1.4"
+        versionCode 16
+        versionName "1.6"
     }
 
    compileOptions {

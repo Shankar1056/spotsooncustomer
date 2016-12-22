@@ -87,7 +87,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
     private PayuHashes payuHashes;
     private PayU_Hashpojo ServerResponse;
     private Intent intent;
-    private ImageView arrowView;
+    private ImageView arrowView,poweredby;
     private TextView userName,userId,total_amt,next_ren,view_plans;
     private TextView package_name,package_name_main,package_amount,package_amount_main,tax,tax_amount,convinience_amount;
     private SpotasManager session;
@@ -98,6 +98,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
     private LinearLayout mRechargesLayout;
     private TextView mRechargeExpiryDate,mRechargeLaterDate,postExpirationText;
     private Calendar currentCalendar;
+    private boolean isPlanChanged;
 
     private List<PlansDetailsHelper> listDataHeaders = new ArrayList<PlansDetailsHelper>();
     private HashMap<PlansDetailsHelper, List<PlansCouponsDetails>> listDataChild = new HashMap<PlansDetailsHelper, List<PlansCouponsDetails>>();
@@ -133,7 +134,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
             mconvenienceFee = intent.getStringExtra("convenienceFee");
             mTotal = intent.getStringExtra("Total");
 
-            boolean isPlanChanged = intent.getBooleanExtra("PLAN_CHANGED",false);
+             isPlanChanged = intent.getBooleanExtra("PLAN_CHANGED",false);
             if(isPlanChanged)
             {
                 String payuId = intent.getStringExtra("");
@@ -210,6 +211,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
         LinearLayout showDetailsLayout = (LinearLayout)findViewById(R.id.details_layout);
          detailsLayout = (LinearLayout)findViewById(R.id.summary_payment_layout);
         arrowView = (ImageView)findViewById(R.id.arrow_image);
+        poweredby = (ImageView) findViewById(R.id.poweredby);
         Button proceed = (Button)findViewById(R.id.proceed);
         proceed.setOnClickListener(this);
 
@@ -234,6 +236,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
         TextView prev_ren = (TextView)findViewById(R.id.previous_renewal_date);
         TextView tv_next_ren = (TextView)findViewById(R.id.next_renewal_date_tv);
         next_ren = (TextView)findViewById(R.id.next_renewal_date);
+
 
         package_name = (TextView)findViewById(R.id.package_name);
         package_name_main = (TextView)findViewById(R.id.package_name_top);
@@ -530,6 +533,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
                     if((isPackageChanged) &&(mPayuId!=null && mPayuId.length()>0))//if user changed to new package(payu id will generate while updating package)
                     {
                         if (PaymentGateway.equalsIgnoreCase("RAZORPAY")){
+
                             startRazorPayment("" + Utility.round((Double.parseDouble(newPackageAmount)) * 100));
                         }else {
                             payu(mPayuId, ""+Utility.round(Double.parseDouble(newPackageAmount)),
@@ -808,8 +812,19 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
                         JSONObject object = new JSONObject(jsonResponse);
                         String errFlag = object.getString("errFlag");
                         if (errFlag != null && errFlag.equalsIgnoreCase("0")) {
-                            String payuId = object.getString("payuId");
-                            mPayuId = payuId;
+                            if (object.has("payuId")) {
+                                mPayuId = object.getString("payuId");
+                               // mPayuId = payuId;
+                            }
+
+                            if (object.has("PaymentGateway"))
+                            {
+                                PaymentGateway = object.getString("PaymentGateway");
+
+                            }
+
+
+
                             isPackageChanged = true;
 
                             PlansCouponsDetails plan = listDataChild.get(listDataHeaders.get(groupPos)).get(childPos);
@@ -826,6 +841,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
                             mSubTotal = plan.getSubTotal();
                             mconvenienceFee = plan.getConvenienceFee();
                             mTotal = plan.getTotal();
+
 
                             try {
                                 setValues();
@@ -896,15 +912,17 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
                         String errFlag = object.getString("errFlag");
                         if(errFlag!=null && errFlag.equalsIgnoreCase("0"))
                         {
-                            String payuId = object.getString("payuId");
-                            mPayuId = payuId;
+                            if (object.has("PaymentGateway")) {
+                                mPayuId = object.getString("payuId");
+                               // mPayuId = payuId;
+                            }
                             if (object.has("PaymentGateway")){
                                 PaymentGateway = object.getString("PaymentGateway");
                             }
                             if (PaymentGateway.equalsIgnoreCase("RAZORPAY")){
                                 startRazorPayment("" + Utility.round((Double.parseDouble(mTotal)) * 100 ));
                             }else {
-                                payu(payuId, ""+Utility.round(Double.parseDouble(mTotal)),
+                                payu(mPayuId, ""+Utility.round(Double.parseDouble(mTotal)),
                                          mCouponID);
                             }
 
@@ -1016,7 +1034,7 @@ public class SubscriptionsSummaryAvtivity extends AppCompatActivity implements V
             payuDialog = null;
         }
         try {
-            Toast.makeText(this, "Payment failed: ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Payment Cancelled, please try again!: ", Toast.LENGTH_SHORT).show();
         }
         catch (Exception e){
             Log.e("com.merchant", e.getMessage(), e);

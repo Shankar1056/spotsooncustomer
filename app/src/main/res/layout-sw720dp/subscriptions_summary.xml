@@ -429,9 +429,10 @@
         android:background="#ffFFFFFF">
 
         <ImageView
+            android:id="@+id/poweredby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/payu"
+            android:background="@drawable/razorpay"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/margin_5_to_8"
             android:gravity="center"/>

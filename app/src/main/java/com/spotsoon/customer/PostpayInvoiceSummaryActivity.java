@@ -63,7 +63,7 @@ public class PostpayInvoiceSummaryActivity extends AppCompatActivity implements 
     private TextView mDaysToDueDate,mDueDateStatus,mCurrentPlan,mConvenienceFee;
     private EditText mEnterdAmount;
     private Button mProceedToPay;
-    private ImageView mArrowView;
+    private ImageView mArrowView,poweredby;
     private LinearLayout mDetailsLayout;
     private String type,businessId,encodedString,packageId;
     private String invoiceDate,daysToDue,invoiceNo,paymentsDone,dueDate,billStartDate,billEndDate,billAmount,openingBalance,payableAmount,convenienceRate,convenienceFee,Total,amountEditable,invoiceHTML;
@@ -88,14 +88,13 @@ public class PostpayInvoiceSummaryActivity extends AppCompatActivity implements 
         Intent intent = getIntent();
         if(intent!=null) {
 
-           String providerName = intent.getStringExtra("PROVIDER");
+            String providerName = intent.getStringExtra("PROVIDER");
             type = intent.getStringExtra("TYPE");
             businessId = intent.getStringExtra("BUSINESS_ID");
             encodedString = intent.getStringExtra("ENCODED");
-           String domId = intent.getStringExtra("DOM_ID");
+            String domId = intent.getStringExtra("DOM_ID");
             packageId = intent.getStringExtra("PACKAGE");
-           String morePlans = intent.getStringExtra("MorePlans");
-
+            String morePlans = intent.getStringExtra("MorePlans");
             invoiceDate = intent.getStringExtra("invoiceDate");
             dueDate = intent.getStringExtra("dueDate");
             billStartDate = intent.getStringExtra("billStartDate");
@@ -209,6 +208,7 @@ public class PostpayInvoiceSummaryActivity extends AppCompatActivity implements 
         mProceedToPay = (Button)findViewById(R.id.proceed_to_pay);
         TextView mViewInvoice = (TextView)findViewById(R.id.view_invoice);
         mArrowView = (ImageView)findViewById(R.id.arrow);
+        poweredby = (ImageView)findViewById(R.id.poweredby);
         RelativeLayout mViewDetailsLayout = (RelativeLayout)findViewById(R.id.view_details_layout);
         mDetailsLayout = (LinearLayout)findViewById(R.id.details_layout);
 
@@ -603,18 +603,19 @@ public class PostpayInvoiceSummaryActivity extends AppCompatActivity implements 
                         JSONObject object = new JSONObject(jsonResponse);
                         String errFlag = object.getString("errFlag");
                         if (errFlag != null && errFlag.equalsIgnoreCase("0")) {
-                            String payuId = object.getString("payuId");
+                            if (object.has("payuId")) {
+                                mPayuId = object.getString("payuId");
+                            }
                             if (object.has("PaymentGateway")){
                                  PaymentGateway = object.getString("PaymentGateway");
                             }
-                            mPayuId = payuId;
 
                             if(isAmountEdited)
                             {
                                 if (PaymentGateway.equalsIgnoreCase("RAZORPAY")){
                                     startRazorPayment("" + Utility.round(editedTotalAmount * 100));
                                 }else {
-                                    payu(payuId, "" + Utility.round(editedTotalAmount), packageId);
+                                    payu(mPayuId, "" + Utility.round(editedTotalAmount), packageId);
                                 }
 
 
@@ -623,7 +624,7 @@ public class PostpayInvoiceSummaryActivity extends AppCompatActivity implements 
                                 if (PaymentGateway.equalsIgnoreCase("RAZORPAY")){
                                     startRazorPayment("" + Utility.round((Double.parseDouble(Total)) * 100));
                                 }else {
-                                    payu(payuId, "" + Utility.round(Double.parseDouble(Total)), packageId);
+                                    payu(mPayuId, "" + Utility.round(Double.parseDouble(Total)), packageId);
                                 }
 
                             }
@@ -739,7 +740,9 @@ public class PostpayInvoiceSummaryActivity extends AppCompatActivity implements 
 
                     JSONObject jsonObject1 = jsonObject.getJSONObject("data");
                     if (s.length()>0 && errFlag.equalsIgnoreCase("0") && jsonObject1!=null && jsonObject1.length()>0) {
-                        mPayuId = jsonObject1.getString("TransactionId");
+                        if (jsonObject1.has("TransactionId")) {
+                            mPayuId = jsonObject1.getString("TransactionId");
+                        }
                         if (jsonObject1.has("PaymentGateway")){
                             PaymentGateway = jsonObject1.getString("PaymentGateway");
                         }

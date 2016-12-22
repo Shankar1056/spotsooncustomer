@@ -64,7 +64,7 @@ public class TraditionalSummaryActivity extends AppCompatActivity implements Vie
     private TextView tax,tax_amount,convinience_amount;
     private RelativeLayout tax_layout,convinience_fee_layout;
     private LinearLayout detailsLayout;
-    private ImageView arrowView;
+    private ImageView arrowView,poweredby;
     private SpotasManager session;
     private String userId,houseNumber,lankMark,city,pincode,payuId,PaymentGateway = null;
     private double packgaeAmount=0,totalAmount=0,taxTotal=0,convinienceFee=0;
@@ -141,6 +141,7 @@ public class TraditionalSummaryActivity extends AppCompatActivity implements Vie
         LinearLayout showDetailsLayout = (LinearLayout)findViewById(R.id.details_layout);
         detailsLayout = (LinearLayout)findViewById(R.id.summary_payment_layout);
         arrowView = (ImageView)findViewById(R.id.arrow_image);
+        poweredby = (ImageView)findViewById(R.id.poweredby);
 
         TextView proName = (TextView)findViewById(R.id.merchant_name);
         TextView view_plans = (TextView)findViewById(R.id.view_plans);
@@ -464,7 +465,7 @@ public class TraditionalSummaryActivity extends AppCompatActivity implements Vie
                 PaymentGateway = respo_singin.getPaymentGateway();
                 if (PaymentGateway.equalsIgnoreCase("RAZORPAY")){
                     String a= Utility.round(totalAmount);
-                  startRazorPayment("" + Utility.round((Double.parseDouble(a)) * 100 ));
+                    startRazorPayment("" + Utility.round((Double.parseDouble(a)) * 100 ));
                   /*  String b =Utility.round(totalAmount * 100);
                     String a =Utility.round((Double.parseDouble(String.valueOf(totalAmount))) * 100);
                     startRazorPayment("" + Utility.round((Double.parseDouble(String.valueOf(totalAmount))) * 100));*/

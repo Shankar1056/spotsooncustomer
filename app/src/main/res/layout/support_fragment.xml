@@ -9,7 +9,7 @@
 
     <RelativeLayout android:layout_width="match_parent"
                    android:layout_margin="7dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="160dp"
                     android:background="@drawable/support_pro_white_background"
                     android:layout_centerHorizontal="true"
                     android:id="@+id/white_background1">
@@ -70,6 +70,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:id="@+id/call_us_layout"
+                        android:visibility="gone"
                         android:background="@drawable/support_mailus">
 
             <com.utility.CustomTextView android:layout_width="wrap_content"

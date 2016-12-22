@@ -2,270 +2,270 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="e7b98fe8c74aa6867f367ff0446d0652f35174a7">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6ccf1d66fd22b4982fc210bd9bd0c9cdf2975472\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.10\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="2f9a9b21b70965cde70f6eb8f2ee68794fb482e6">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-core-2.3.10_fba679e8a14c95a1ec3072e38059317271e200b6\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.crashlytics.sdk.android-crashlytics-core-2.3.10_fba679e8a14c95a1ec3072e38059317271e200b6.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_48c91d38166aa37be2c5cc51db7a7c61ecfefde1\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\library-2.4.0_48c91d38166aa37be2c5cc51db7a7c61ecfefde1.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.6.0\212387a39088ecd3daff8e3bfc3bdc4123e33c67\okhttp-2.6.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="212387a39088ecd3daff8e3bfc3bdc4123e33c67">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.6.0_c15c0a696109d920abd5fc70ad9d2c9be9e951d9\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_2b55e7638ac8e7a8cb3884021d3a6e8726186f9c\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\okhttp-2.6.0_c15c0a696109d920abd5fc70ad9d2c9be9e951d9.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.12\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="3575e73a22dce98f0bdbcdb475ef55a84606a9a6">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.fabric.sdk.android-fabric-1.3.12_13539208f96fb937b1e4e0ed371eaa8bdd276d2e\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_5bc783ae13b25b2cc8edc3e5b00eccf7cd5962f8\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="a3ebac72ca6befe2e900427505dbb3dd58a5ebbf">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.1_752c40eb57303fe2eb6adc4577649afa90bfb8a0\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.2_8baa8beb2620ae8ac1397ec499c243ff78f9d07d\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_c000f9609c66c5fb7161f40aa5de757d6bf8ef46\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_d420655ffda29d9f645a0dede969c4523c58f339\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.mixpanel.android\mixpanel-android\4.6.4\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="0adb9447509bdd9a674c1c3e7e5ee996247df478">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mixpanel.android-mixpanel-android-4.6.4_2a0555e35005431d10171946a4416eb1cf733b1a\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\io.fabric.sdk.android-fabric-1.3.12_13539208f96fb937b1e4e0ed371eaa8bdd276d2e.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\libs\razorpay-android-0.13.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="256cee3fc027cb1b979c3c44ab517ddbcd1140ff">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\2\razorpay-android-0.13.0_1c6d11c6d9dbc260e20d42a214fef01d7bc106b6\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\razorpay-android-0.13.0_1c6d11c6d9dbc260e20d42a214fef01d7bc106b6.jar" />
     </item>
     <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="false"
         revision="23.0.1"
-        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_889f3ed1d4e36d9b2b577d2ae86c7c3e2f86ea71\classes.dex" />
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-multidex-1.0.1_5bc783ae13b25b2cc8edc3e5b00eccf7cd5962f8.jar" />
     </item>
     <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.payu.india\payu-sdk\4.3.4\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Shankar\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
         revision="23.0.1"
-        sha1="5d430664c09afc64c153d7d6dd542901c63f3972">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.payu.india-payu-sdk-4.3.4_47ea4308bf3eadf7629cae7c67ea97f4ee5a1109\classes.dex" />
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\support-annotations-23.2.1_2b55e7638ac8e7a8cb3884021d3a6e8726186f9c.jar" />
     </item>
     <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.payu.custombrowser\payu-custom-browser\5.3.7\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.1\jars\classes.jar"
+        jumboMode="false"
         revision="23.0.1"
-        sha1="0c53dc7b12778e0bd88e490d9312cbc6e247e084">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.payu.custombrowser-payu-custom-browser-5.3.7_93ac5e79cee2438db70a921fd1a178d950cd1bec\classes.dex" />
+        sha1="a3ebac72ca6befe2e900427505dbb3dd58a5ebbf">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-9.0.1_752c40eb57303fe2eb6adc4577649afa90bfb8a0.jar" />
     </item>
     <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\SpotSoon\PullToRefresh\unspecified\jars\classes.jar"
+        jumboMode="false"
         revision="23.0.1"
-        sha1="673d77a5bbddd766037f088e775df525c46407f0">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_4489f1022716764bb0993415338b52a4ebe576b8\classes.dex" />
+        sha1="1f9bbb8643de3a96b2caa31f3e00b52a2af4cf30">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\SpotSoon-PullToRefresh-unspecified_7ab0eafd62d2d43cf8c3c0208c50ac5021e0f857.jar" />
     </item>
     <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
+        jumboMode="false"
         revision="23.0.1"
-        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.daimajia.androidanimations-library-1.1.3_be387f6d1f7f10d066afbe2f5a426594b50a7528\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.payu.magicretry\magicretry\1.0.4\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="3f9cb14177c394545a825f1f04b4f287f6c771e0">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.payu.magicretry-magicretry-1.0.4_53a69613f64b43ce5679e6ca50a8399ee071c118\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_084e0d944af496506b12ee13fd776f7073a26dc9\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="1981e525f04412019f8728087724148a8a6d9690">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_bd9ceab158eabbfeb615c755fa32efead27d577b\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.8\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="0c46a5a897439810b6c437ce188bd07d9d8dffb0">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-answers-1.3.8_b5f09a957c08b3a66c84e420c61928d2b582aa58\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\org.jbundle.util.osgi.wrapped\org.jbundle.util.osgi.wrapped.org.apache.http.client\4.1.2\98c86e42679fe7ac066f6c242e0d14f0bce0bb7c\org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_daf3e593110f8d6b47bfa28259bf7744846f219f\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="13270ae22369a0d50cb6c560aeca4056f025cae6">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.1_6f9cb778913d872e89e5b8e0974b8f41825768e7\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_e2261f3a20b38ac7db33ec0a5f865b3d411b596c\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="d2ce88db16786c9c2a839f1839af47a9a96dad17">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-beta-1.2.1_e983befeebbf04e7cb42a20141203a17ee08724f\classes.dex" />
+        sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\gson-2.2.2_8baa8beb2620ae8ac1397ec499c243ff78f9d07d.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_82d9f4535575d9ea29310473418ea12e1221b4db\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\okio-1.6.0_82d9f4535575d9ea29310473418ea12e1221b4db.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.2.1_c000f9609c66c5fb7161f40aa5de757d6bf8ef46.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\internal_impl-23.2.1_d420655ffda29d9f645a0dede969c4523c58f339.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.mixpanel.android\mixpanel-android\4.6.4\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0adb9447509bdd9a674c1c3e7e5ee996247df478">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.mixpanel.android-mixpanel-android-4.6.4_2a0555e35005431d10171946a4416eb1cf733b1a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.payu.india\payu-sdk\4.3.4\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5d430664c09afc64c153d7d6dd542901c63f3972">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.payu.india-payu-sdk-4.3.4_47ea4308bf3eadf7629cae7c67ea97f4ee5a1109.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\SpotSoon\sdkui\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="73af10eeef61154479c2272cde55583a15972c54">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\SpotSoon-sdkui-unspecified_c37fe1ad76aa1c142871af365d1efd97a2354e23.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.2.1_4489f1022716764bb0993415338b52a4ebe576b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.payu.custombrowser\payu-custom-browser\5.3.7\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0c53dc7b12778e0bd88e490d9312cbc6e247e084">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.payu.custombrowser-payu-custom-browser-5.3.7_93ac5e79cee2438db70a921fd1a178d950cd1bec.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.payu.magicretry\magicretry\1.0.4\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f9cb14177c394545a825f1f04b4f287f6c771e0">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.payu.magicretry-magicretry-1.0.4_53a69613f64b43ce5679e6ca50a8399ee071c118.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.2.1_889f3ed1d4e36d9b2b577d2ae86c7c3e2f86ea71.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.2.1_084e0d944af496506b12ee13fd776f7073a26dc9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.daimajia.androidanimations-library-1.1.3_be387f6d1f7f10d066afbe2f5a426594b50a7528.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.8\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0c46a5a897439810b6c437ce188bd07d9d8dffb0">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.crashlytics.sdk.android-answers-1.3.8_b5f09a957c08b3a66c84e420c61928d2b582aa58.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\org.jbundle.util.osgi.wrapped\org.jbundle.util.osgi.wrapped.org.apache.http.client\4.1.2\98c86e42679fe7ac066f6c242e0d14f0bce0bb7c\org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_daf3e593110f8d6b47bfa28259bf7744846f219f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="13270ae22369a0d50cb6c560aeca4056f025cae6">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-9.0.1_6f9cb778913d872e89e5b8e0974b8f41825768e7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.2.1_e2261f3a20b38ac7db33ec0a5f865b3d411b596c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d2ce88db16786c9c2a839f1839af47a9a96dad17">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.crashlytics.sdk.android-beta-1.2.1_e983befeebbf04e7cb42a20141203a17ee08724f.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.0.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="bc38f0704a08802ebc398ecf13a0c9b2072dc1e5">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.0.1_b7f36879b2f02388a8396305794ea0a3ba224174\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-gcm-9.0.1_b7f36879b2f02388a8396305794ea0a3ba224174.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\xmlpull-1.1.3.1_bd79bf76787f4e7ae4b81f947ee2f942de73586a\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\xmlpull-1.1.3.1_bd79bf76787f4e7ae4b81f947ee2f942de73586a.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.6.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="99c0128e5e416cf65c7dc8465c1cb1d5fd7c4f92">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-2.6.1_540787fa4fef0cf18e9af6be477dabec37ae9d58\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp-urlconnection\2.6.0\f1c87f9ffe72bfcdce6f2514d12e42ed43410a87\okhttp-urlconnection-2.6.0.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="f1c87f9ffe72bfcdce6f2514d12e42ed43410a87">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-urlconnection-2.6.0_c4c11d627e0e3123515566ad1180377098f259a1\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="ffc3c6fc861f04d45835c9eac5cec10acc180d55">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.1_91a4b4f3e30388f9ca05e1e2d3fd27be569aacb5\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.2.1_77013047142190c02ee539e557440891b23f1011\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="e711046a40e1562d85854ee09cd0a05254cb6463">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.1_6797babdaa2d6375435e3c301f469103b252aae6\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.0.1\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="babde6b32d7ab7c069a98f008b2bc795c8777fae">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.0.1_9dc51ea2a30eea350b3c445979b0c84cb0287064\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.stanfy\gson-xml-java\0.1.7\358b24a904397a39587b6a25eb434f1aac110f94\gson-xml-java-0.1.7.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="358b24a904397a39587b6a25eb434f1aac110f94">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-xml-java-0.1.7_6d4b449f29edff05e249945bb2ee676ebe1f3743\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.crashlytics.sdk.android-crashlytics-2.6.1_540787fa4fef0cf18e9af6be477dabec37ae9d58.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.daimajia.easing-library-1.0.1_05299205f6c440425f99fc914f7ca25bd03e0a08\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.daimajia.easing-library-1.0.1_05299205f6c440425f99fc914f7ca25bd03e0a08.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ffc3c6fc861f04d45835c9eac5cec10acc180d55">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-common-9.0.1_91a4b4f3e30388f9ca05e1e2d3fd27be569aacb5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.android.support-design-23.2.1_77013047142190c02ee539e557440891b23f1011.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp-urlconnection\2.6.0\f1c87f9ffe72bfcdce6f2514d12e42ed43410a87\okhttp-urlconnection-2.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f1c87f9ffe72bfcdce6f2514d12e42ed43410a87">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\okhttp-urlconnection-2.6.0_c4c11d627e0e3123515566ad1180377098f259a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="babde6b32d7ab7c069a98f008b2bc795c8777fae">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-iid-9.0.1_9dc51ea2a30eea350b3c445979b0c84cb0287064.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.stanfy\gson-xml-java\0.1.7\358b24a904397a39587b6a25eb434f1aac110f94\gson-xml-java-0.1.7.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="358b24a904397a39587b6a25eb434f1aac110f94">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\gson-xml-java-0.1.7_6d4b449f29edff05e249945bb2ee676ebe1f3743.jar" />
     </item>
     <item
         jar="C:\Users\Shankar\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.1"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_d0295394d443b6c6038cd22a00dfc165a5819b6e\classes.dex" />
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\picasso-2.5.2_d0295394d443b6c6038cd22a00dfc165a5819b6e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e711046a40e1562d85854ee09cd0a05254cb6463">
+        <dex dex="C:\Users\Shankar\Desktop\customer-side\SpotSoon\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-9.0.1_6797babdaa2d6375435e3c301f469103b252aae6.jar" />
     </item>
 
 </items>
